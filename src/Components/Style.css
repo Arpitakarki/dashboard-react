@@ -1,0 +1,169 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img{
+    width: 10%;
+}
+
+
+.profile a{
+    text-decoration: none;
+    background-color: #75bdee;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+.main-head{
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff6f;
+    z-index: 100;
+}
+
+.Logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.profile{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+/* dashboard */
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/background.png);
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.sec-con{
+    max-width: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    flex: 1;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.bar {
+    width: 20%;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.pie-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    background: conic-gradient(red 0% 25%, yellow 25% 75%, green 75% 100%);
+}
+
+.pie-chart .slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0px, 75px, 150px, 0px);
+    border-radius: 50%;
+}
+
+.slice-1 {
+    background: rgb(18, 18, 135);
+    transform: rotate(90deg);
+}
+
+.slice-2 {
+    background: rgb(31, 49, 165);
+    transform: rotate(180deg);
+}
+
+.slice-3 {
+    background: rgb(12, 1, 53);
+    transform: rotate(270deg);
+}
+
+.line-chart svg {
+    width: 100%;
+    height: 150px;
+}
+
+.horizontal-bar-chart {
+    width: 100%;
+}
+
+.horizontal-bar-chart .bar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.horizontal-bar-chart .label {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.horizontal-bar-chart .bar {
+    height: 30px;
+    background-color: #3463db;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-1{
+    max-width: 625px;
+}

@@ -1,0 +1,130 @@
+
+
+.main{
+    background-image: url(images/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.react{
+    position: relative;
+    width: 440px;
+    height: 450px;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    transition: height 1s ease;
+    overflow: hidden;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.react.active{
+    height: 580px;
+}
+
+.react.active .div-1.login{
+    transition: none;
+    translate: -400px;
+}
+
+.react .div-1.login{
+    transition: translate .1s ease;
+    translate: 0px;
+}
+
+.react .div-1.registration{
+    position: absolute;
+    transition: none;
+    translate: 400px;
+}
+
+.react.active .div-1.registration{
+    transition: translate .1s ease;
+    translate: 0px;
+}
+
+.react .div-1{
+    width: 425px;
+    padding: 40px;
+}
+
+form h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+form .input-box{
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, .1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+}
+
+form .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+ a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+form button{
+    width: 100%;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 45px;
+}
+
+.register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
